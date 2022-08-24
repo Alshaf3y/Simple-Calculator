@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1c1c1c;
+    --second-color: #505050;
+    --third: #d4d4d4;
+    --forth: #ff9500;
+}
+
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    border: 1px solid;
+    border-radius: 1rem;
+    width: 370px;
+    min-height: 350px;
+    background-color: var(--second-color);
+    padding: 40px 30px 30px;
+}
+
+.container .display input {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: end;
+    padding: 10px;
+    font-size: 2rem;
+    user-select: none;
+    border-radius: 5px;
+}
+.container .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .one span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    background-color: var(--third);
+    border: none;
+    border-radius: 50%;
+    color: black;
+    margin: 8px;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#sign {
+    background-color: var(--forth);
+}
+
+.container .one span:hover,span:focus {
+    cursor: pointer;
+    opacity: 0.9;
+    outline: 0;
+
+}
+
+.container .one span:active {
+    box-shadow: none;
+    margin-top: .1px;
+}

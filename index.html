@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form name="calc" action="" class="calculator">
+            <div class="display">
+            <input type="text" id="myInput" readonly>
+            </div>
+            <div class="buttonClick">
+                <div class="one">
+                    <span id="sign" onclick="btnClearAll()"><i>C</i></span>
+                    <span id="sign" onclick="btnBackspace()"><i style='font-size:24px' class='fas'>&#xF159;</i></span>
+                    <span id="sign" onclick="btnpercent()"><i>%</i></span>
+                    <span id="sign" onclick="btnDivide()"><i>/</i></span>
+                </div>
+                <div class="one">
+                    <span onclick="btnSeven()"><i>7</i></span>
+                    <span onclick="btnEight()"><i>8</i></span>
+                    <span onclick="btnNine()"><i>9</i></span>
+                    <span id="sign" onclick="btnMulti()"><i>*</i></span>
+                </div>
+                <div class="one">
+                    <span onclick="btnFour()"><i>4</i></span>
+                    <span onclick="btnFive()"><i>5</i></span>
+                    <span onclick="btnSix()"><i>6</i></span>
+                    <span id="sign" onclick="btnMinus()"><i>-</i></span>
+                </div>
+                <div class="one">
+                    <span onclick="btnOne()"><i>1</i></span>
+                    <span onclick="btnTwo()"><i>2</i></span>
+                    <span onclick="btnThree()"><i>3</i></span>
+                    <span id="sign" onclick="btnPlus()"><i>+</i></span>
+                </div>
+                <div class="one">
+                    <span onclick="btnZero()"><i>0</i></span>
+                    <span onclick="btnZeroO()"><i>00</i></span>
+                    <span onclick="btnDot()"><i>.</i></span>
+                    <span id="sign" onclick="btnEqual()"><i>=</i></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
